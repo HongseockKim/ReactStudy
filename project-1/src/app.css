@@ -1,4 +1,7 @@
-
+*{box-sizing: border-box}
+#root{
+    min-width:500px;
+}
 button{
     outline: none;border:0;cursor: pointer;
 }
@@ -23,4 +26,28 @@ button{
 }
 .habit-delete{
     font-size: 2rem;color: darkred;
+}
+nav{
+    position: relative;
+    padding:13px 30px;background: forestgreen;color: #fafafa;font-weight: bold;
+    box-shadow: 0px 0px 5px #282c34;
+}
+nav:after{
+    content: '';display: block;clear: both;
+}
+.navbar-logo{
+    float:left;
+    font-size: 2rem;
+}
+.navbar-logo span{
+    display: inline-block;margin-left:20px;
+}
+.navbar-count{
+    position: absolute;top:50%;right:20px;transform: translateY(-50%);
+}
+.navbar-count span{
+    margin-left:20px;
+    display: inline-block;
+    padding:6px 12px;background: #fafafa;color: #333;
+    border-radius:50%;
 }
