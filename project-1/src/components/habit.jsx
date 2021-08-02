@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
-class Habit extends Component {
+class Habit extends PureComponent {
     //habits 에 있는 함수 인자 를 받아온다
     //이놈의 자식 프롭의 온인크리먼트 의 그녀석 의 프롭 함수 인자 핫빗
     handelIncrement = () => {
@@ -31,8 +31,8 @@ class Habit extends Component {
     // };
     render() {
         console.log(this.props.habit)//애의 부모의 habis 에서 받아온 props
-
-        const {name,count} = this.props.habit
+        //애는 habits 에 있는 이넘의 props 를 받아오는거임 this.props 의 카운트 는 this.props
+        const {name,count} = this.props.habit;
 
         return (
             <li className={"habit"}>
