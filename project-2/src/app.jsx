@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import State from "./components/state";
 import Feath from "./components/feath";
 import './app.css';
-
-
+import Hookstudy from "./components/hookstudy";
+import Hooktest from "./components/hooktest";
 const foodLike =[
     {
         id:1,
@@ -71,6 +71,9 @@ function App() {
   return (
     <>
     <div>
+        <Hooktest/>
+        <h2>------------------절취선---------------------</h2>
+        <Hookstudy/>
         {
             foodLike.map(dish => <Food key={dish.id} name={dish.name} text={dish.text} ratings={dish.rating}/>)
             // foodLike.map(renderFood)}

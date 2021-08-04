@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from "axios";
 import Movie from "./movie";
 
+
 class Feath extends Component {
     state ={
         isLoading : true,
@@ -34,7 +35,7 @@ class Feath extends Component {
             <div>{
                 isLoading ? "Loading" : movies.map(movies => {
                     console.log(movies);
-                    return (<Movie key={movies.id} id={movies.id} year={movies.year} title={movies.title}  summary={movies.summary} poster={movies.poster}/>)
+                    return (<Movie key={movies.id} id={movies.id} year={movies.year} title={movies.title}  summary={movies.summary} poster={movies.medium_cover_image}/>)
                 })
             }</div>
 
