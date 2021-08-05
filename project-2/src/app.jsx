@@ -5,6 +5,7 @@ import Feath from "./components/feath";
 import './app.css';
 import Hookstudy from "./components/hookstudy";
 import Hooktest from "./components/hooktest";
+import Study0806 from "./components/study_0806";
 const foodLike =[
     {
         id:1,
@@ -71,6 +72,7 @@ function App() {
   return (
     <>
     <div>
+        <Study0806/>
         <Hooktest/>
         <h2>------------------절취선---------------------</h2>
         <Hookstudy/>
